@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos</title>
+    <link rel="stylesheet" href="../../css/practica-style.css">
+</head>
+<body>
+
+    <h2>Registro de Usuario</h2>
+
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+        <br><br>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo">
+        <br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad">
+        <br><br>
+
+        <label>Género:</label>
+        <input type="radio" id="masculino" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="genero" value="Femenino">
+        <label for="femenino">Femenino</label>
+        <input type="radio" id="otro" name="genero" value="Otro">
+        <label for="otro">Otro</label>
+        <br><br>
+        
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" id="fecha">
+        <br><br>
+
+        <label for="color">Color favorito:</label>
+        <input type="color" id="color" value="#0056b3">
+        <br><br>
+
+        <button type="button" onclick="mostrarDatos()">Imprimir Datos</button>
+    </form>
+
+    <p id="resultado"></p>
+
+    <script src="3.js"></script>
+
+    <a href="../1/1.html">Ejercicio 1</a><br></br>
+    <a href="../2/2.html">Ejercicio 2</a>
+
+</body>
+</html>

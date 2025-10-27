@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica 5 - Registro de Películas (Corregido)</title>
+    <link rel="stylesheet" href="../css/practica-style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">Regresar al Portafolio</a>
+        <h1>Registro de Películas Favoritas</h1>
+        <h2>Completa el formulario</h2>
+
+        <form id="formDatos">
+            <label for="texto">Tu Nombre:</label>
+            <input type="text" id="texto" placeholder="Escribe tu nombre completo">
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" placeholder="usuario@ejemplo.com">
+
+            <fieldset>
+                <legend>¿Qué géneros de películas prefieres? (Puedes seleccionar más de uno)</legend>
+                <label><input type="checkbox" name="opciones" value="Ciencia Ficción"> Ciencia Ficción</label>
+                <label><input type="checkbox" name="opciones" value="Comedia"> Comedia</label>
+                <label><input type="checkbox" name="opciones" value="Drama"> Drama</label>
+                <label><input type="checkbox" name="opciones" value="Acción"> Acción</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>¿Cómo calificarías la última película que viste?</legend>
+                <label><input type="radio" name="grupo" value="Excelente"> Excelente</label>
+                <label><input type="radio" name="grupo" value="Buena"> Buena</label>
+                <label><input type="radio" name="grupo" value="Regular"> Regular</label>
+            </fieldset>
+
+            <label for="fechaHora">Fecha en que la viste:</label>
+            <input type="datetime-local" id="fechaHora">
+
+            <label for="color">Color predominante del póster:</label>
+            <input type="color" id="color" value="#3498db">
+            <br><br>
+
+            <label for="rango">Tu puntuación (0–100):</label>
+            <input type="range" id="rango" min="0" max="100" value="75">
+            <span id="rangoValor">75</span>
+            <br><br>
+
+            <button type="button" onclick="agregarFila()">Añadir a la lista</button>
+        </form>
+
+        <h2>Películas Registradas</h2>
+        <table id="tablaDatos">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Géneros Preferidos</th>
+                    <th>Calificación</th>
+                    <th>Fecha</th>
+                    <th>Color del Póster</th>
+                    <th>Puntuación</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="logic.js"></script>
+    <script>
+        document.getElementById('rango').addEventListener('input', function () {
+            document.getElementById('rangoValor').textContent = this.value;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+body {
+    background-color: #1e2124; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e0e0; 
+    padding: 20px;
+}
+
+h1 { color: #00aaff; }
+h2 { color: #3498db; }
+
+form, table {
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+}
+
+fieldset {
+    border: 1px solid #444;
+    padding: 10px 12px;
+    border-radius: 6px;
+}
+
+legend {
+    color: #e0e0e0;
+}
+
+input[type="text"], input[type="email"], input[type="datetime-local"] {
+    background-color: #282b30;
+    color: #e0e0e0;
+    border: 1px solid #555;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+button:hover { background-color: #0088cc; }
+
+#resultado {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0 20px 0;
+}
+
+#tablaDatos {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+#tablaDatos th, #tablaDatos td {
+    border: 1px solid #444;
+    padding: 12px;
+}
+
+#tablaDatos th {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+#tablaDatos tbody tr:nth-child(odd)  { background-color: #282b30; }
+#tablaDatos tbody tr:nth-child(even) { background-color: #36393e; }
+
+#tablaDatos tbody tr:hover {
+    background-color: #4a545c;
+    color: #ffffff;
+}
+
+.color-muestra {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #999;
+    vertical-align: middle;
+    margin-right: 6px;
+    border-radius: 3px;
+}
